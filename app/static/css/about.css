@@ -1,0 +1,38 @@
+body
+{
+    background-color: black;
+}
+
+.fs-4
+{
+    color: wheat;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    background-color: white;
+    color: black;
+}
+
+.nav-pills .nav-link, .nav-pills .show>.nav-link
+{
+    color: white;
+}
+
+p
+{
+    color: white;
+}
+
+.list-group-item
+{
+    background-color: rgba(245, 222, 179, 0.9);
+    color: black;
+}
+
+.list-group-item.active
+{
+    background-color: darkgrey;
+    color: black;
+    border-color: darkgrey;
+}

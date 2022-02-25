@@ -1,3 +1,52 @@
 body {
-font-size: 200%;
+    font-family: Helvetica, "Helvetica Neue", sans-serif;
+    background-color: black;
+}
+
+
+.fs-4
+{
+    color: wheat;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    background-color: white;
+    color: black;
+}
+
+.nav-pills .nav-link, .nav-pills .show>.nav-link
+{
+    color: white;
+}
+
+.card
+{
+    background-color: rgba(245, 222, 179, 0.9);
+}
+
+.card-link
+{
+    text-decoration: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    color: black;
+}
+
+.card-link:hover
+{
+    background-color: #e0b565;
+    color: white;
+}
+
+.row
+{
+    text-align: center;
+    margin-left: 5%;
+}
+
+#carouselExampleIndicators
+{
+    margin-bottom: 5%;
 }
