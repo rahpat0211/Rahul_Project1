@@ -22,7 +22,7 @@ body {
 
 .card
 {
-    background-color: rgba(245, 222, 179, 0.9);
+    background-color: rgba(112, 110, 108, 0.9);
 }
 
 .card-link
@@ -49,4 +49,25 @@ body {
 #carouselExampleIndicators
 {
     margin-bottom: 5%;
+}
+
+h5
+{
+    color: wheat;
+}
+
+img
+{
+    filter: brightness(25%);
+}
+
+a
+{
+    color: white;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: #e0b565;
 }
