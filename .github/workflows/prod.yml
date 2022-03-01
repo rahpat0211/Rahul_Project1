@@ -39,7 +39,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: rup1141/rahul_heroku
+          images: rup1141/patel-r-project1
 
       - name: Build and push
         uses: docker/build-push-action@v2
