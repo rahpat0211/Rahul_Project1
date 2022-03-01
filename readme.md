@@ -2,12 +2,12 @@
 
 [![Production Workflow](https://github.com/rahpat0211/Rahul_Project1/actions/workflows/prod.yml/badge.svg)](https://github.com/rahpat0211/Rahul_Project1/actions/workflows/prod.yml)
 
-* [Production Deployment](https://heroku-rahul.herokuapp.com/)
+* [Production Deployment](https://rahul-production.herokuapp.com/)
 
 
 [![Development Workflow](https://github.com/rahpat0211/Rahul_Project1/actions/workflows/dev.yml/badge.svg)](https://github.com/rahpat0211/Rahul_Project1/actions/workflows/dev.yml)
 
-* [Development Deployment](https://heroku-rahul.herokuapp.com/about)
+* [Development Deployment](https://rahul-development.herokuapp.com/)
 
 ## Setting up CI/CD
 
