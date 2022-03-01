@@ -20,4 +20,9 @@ def test_request_about(client):
     assert response.status_code == 200
     assert b"Home" in response.data
 
+def test_request_about(client):
+    """This checks the h5"""
+    response = client.get("/about")
+    assert response.status_code == 200
+    assert b"MySQL Workbench" in response.data
 
