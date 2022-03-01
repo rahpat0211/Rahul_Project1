@@ -1,11 +1,11 @@
 # Project Setup
 
-[![Production Workflow](https://github.com/rahpat0211/rahul_heroku/actions/workflows/prod.yml/badge.svg)](https://github.com/rahpat0211/rahul_heroku/actions/workflows/prod.yml)
+[![Production Workflow](https://github.com/rahpat0211/Rahul_Project1/actions/workflows/prod.yml/badge.svg)](https://github.com/rahpat0211/Rahul_Project1/actions/workflows/prod.yml)
 
 * [Index.html Deployment](https://heroku-rahul.herokuapp.com/)
 
 
-[![Development Workflow](https://github.com/rahpat0211/rahul_heroku/actions/workflows/dev.yml/badge.svg)](https://github.com/rahpat0211/rahul_heroku/actions/workflows/dev.yml)
+[![Development Workflow](https://github.com/rahpat0211/Rahul_Project1/actions/workflows/dev.yml/badge.svg)](https://github.com/rahpat0211/Rahul_Project1/actions/workflows/dev.yml)
 
 * [About.html Deployment](https://heroku-rahul.herokuapp.com/about)
 
