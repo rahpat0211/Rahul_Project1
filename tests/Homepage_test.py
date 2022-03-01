@@ -22,7 +22,7 @@ def test_request_about(client):
 
 def test_request_about(client):
     """This checks the h5"""
-    response = client.get("/about")
+    response = client.get("/")
     assert response.status_code == 200
-    assert b"MySQL Workbench" in response.data
+    assert b"<h5>MySQL Workbench</h5>" in response.data
 
