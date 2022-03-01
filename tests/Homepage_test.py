@@ -9,4 +9,9 @@ def test_request_main_menu_links(client):
 
 
 
+def test_request_about(client):
+    """This checks the h5"""
+    response = client.get("/about")
+    assert response.status_code == 200
+    assert b"MySQL Workbench" in response.data
 
