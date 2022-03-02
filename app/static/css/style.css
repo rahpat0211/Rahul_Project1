@@ -71,3 +71,16 @@ a:hover
     text-decoration: none;
     color: #e0b565;
 }
+
+@media only screen and (max-width: 620px)
+{
+    .fs-4
+    {
+        visibility: visible;
+
+    }
+    .nav.nav-pills
+    {
+        visibility: hidden;
+    }
+}
