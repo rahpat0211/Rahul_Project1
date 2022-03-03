@@ -35,49 +35,90 @@
     <div class="row">
 
         <div class="col-8">
+            <h3>Simple Pages</h3>
+            <p>
+                Creation of <strong>Simple Pages</strong> consists of 5 Pages. These pages are:<br>
+                <strong>index.html</strong><br>
+                <strong>git.html</strong><br>
+                <strong>docker.html</strong><br>
+                <strong>python.html</strong><br>
+                <strong>cicd.html</strong><br>
+                Starting off with <strong>index.html</strong>, this page consists of a source code that extends
+                <strong>base.html</strong>. This allows the main web page to be seen on the development/production
+                server on Heroku. Index.html has a Z-Layout that consists of a carousel that displays images of the
+                technologies I have learned so far. Git.html along with the rest of the web pages consists of an F-Layout.
+                Here I have added the navbar to help users easily access different tabs of each web page. On the right side
+                of the webpages you will see images which correspond to what technology is going to be talked about. On the
+                left side you will see text which identifies and explains what the page will be about.
+
+            </p><hr>
             <h3>Testing</h3>
             <p>
-                A unit of software that packages up code and all dependencies so the application runs quickly and
-                reliably.
-            </p><hr>
-            <h3>Images</h3>
-            <p>
-                It is an image that includes everything needed to run an application.
-            </p><hr><br><br>
-            <h3>Commands I Learned</h3>
-            <table>
-  <tr>
-    <th>Command</th>
-    <th>Explanation</th>
-  </tr>
-  <tr>
-    <td><strong>docker run -itp ‘Port #’ ‘Repository name: tag name’<br>
-        docker run -p ‘Port #’ ‘Repository name: tag name’<br>
-        docker run -dp ‘Port #’ ‘Repository name: tag name’</strong></td>
-    <td>Creates a container from a given image and starts the container.</td>
-  </tr>
-  <tr>
-      <td><strong>docker stop ‘Container ID’</strong></td>
-    <td>To stop a running container</td>
-  </tr>
-  <tr>
-      <td><strong>docker ps</strong></td>
-    <td>Lists all the containers that are up and running</td>
-  </tr>
-   <tr>
-      <td><strong>docker images</strong></td>
-    <td>List of all the docker images</td>
-  </tr>
-  <tr>
-      <td><strong>cd</strong></td>
-    <td>Change Directory</td>
-  </tr>
-  <tr>
-      <td><strong>pwd</strong></td>
-    <td>What your current path is</td>
-  </tr>
 
-</table>
+            </p><hr>
+            <h3>Outline</h3><br>
+            <ul>
+                <li>Rahul_Project1 <- <font color="green">Root of the project</font> </li>
+                <ul>
+                    <li>docker-compose.yml <- <font color="green">Orchestration file that contains the configuration to
+                        develop locally, it overrides the Dockerfile to run the flask development server instead of
+                        running the gunicorn server that is used for hosting on Heroku</font></li>
+                    <li>Dockerfile <- <font color="green">File used to create an image to run in a container that runs
+                        the program</font></li>
+                    <li>readme.md <- <font color="green">File used to describe the project </font></li>
+                    <ul>
+                        <li>.github/workflows <- <font color="green">Sub directory of <strong>Rahul_Project1</strong>
+                            that is used for development and
+                            production workflows.</font> </li>
+                        <ul>
+                            <li>dev.yml <- <font color="green">Development workflow configuration. Used to send updated
+                                and testing files.</font> </li>
+                            <li>prod.yml <- <font color="green">Production workflow configuration. Used as the main
+                                configuration file for the latest updates.</font> </li>
+                        </ul>
+                        <li>.app <- <font color="green">Sub directory of <strong>Rahul_Project1</strong> that is used for web pages.</font> </li>
+                        <ul>
+                            <li>static <- <font color="green">Sub directory of <strong>.app</strong> that holds CSS files,
+                                JS files, and images.</font> </li>
+                            <ul>
+                                <li>images <- <font color="green">Sub directory of <strong>.app</strong>
+                                    that holds image files.</font> </li>
+                                <li>js <- <font color="green">Sub directory of <strong>.app</strong> that holds JS
+                                    files.</font> </li>
+                                <li>css <- <font color="green">Subdirectory of <strong>.app</strong>
+                                    that holds CSS files</font> </li>
+                                <ul>
+                                    <li>style.css <- <font color="green">CSS file for index.html</font> </li>
+                                    <li>cicd.css <- <font color="green">CSS file for cicd.html</font> </li>
+                                    <li>docker.css <- <font color="green">CSS file for docker.html</font> </li>
+                                    <li>git.css <- <font color="green">CSS file for git.html</font> </li>
+                                    <li>python.css <- <font color="green">CSS file for python.html</font> </li>
+                                </ul>
+                            </ul>
+                            <li>templates <- <font color="green">Sub directory of <strong>.app</strong> that holds
+                                base.html</font> </li>
+                                <ul>
+                                    <li>base.html <- <font color="green">HTML file to create the homepage</font> </li>
+                                </ul>
+                            <li>simple_pages <- <font color="green">Sub directory of <strong>.app</strong> that holds the
+                                web pages and python script to run index page.</font> </li>
+                                <ul>
+                                    <li>templates <- <font color="green">Sub directory of <strong>simple_pages</strong>
+                                        that holds all the web pages</font> </li>
+                                        <ul>
+                                            <li>index.html <- <font color="green">Index Page</font> </li>
+                                            <li>cicd.html <- <font color="green">Continous Integration & Deployment Page</font> </li>
+                                            <li>docker.html <- <font color="green">Docker Page</font> </li>
+                                            <li>git.html <- <font color="green">Git Page</font> </li>
+                                            <li>python.html <- <font color="green">Python/Flask Page</font> </li>
+                                        </ul>
+                                    <li>_init_.py <- <font color="green">Python script that holds flask blueprint
+                                        documentation.</font> </li>
+                                </ul>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
 
 
 
@@ -93,16 +134,9 @@
 
         <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png" alt="..."></a><br>
 
-        <h10>Click the image above for link to dockerhub repository</h10><hr>
+        <h10>Click the image above for link to dockerhub repository</h10>
 
-        <h3>Steps to start/access Project with Terminal:</h3><br>
-        <h10>Step 1:<p>Open terminal and type in this command:<br><strong>docker pull rup1141/patel-r-project1:master</strong></p></h10><hr><br>
 
-        <h10>Step 2:<p>Change directory to where this file is located.<br><strong>cd Rahul_Project1</strong></p></h10><hr><br>
-
-        <h10>Step 3:<p>Once on the right path, type in this command:<br><strong>docker compose up --build</strong></p></h10><hr><br>
-
-        <h10>Step 4:<p>Finally, open up your browser and type in:<br><strong>localhost</strong></p></h10>
 
 
 
