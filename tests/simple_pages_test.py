@@ -1,7 +1,7 @@
 """This test the Git Page"""
 
 
-def test_request_main_menu_links(client):
+def test_request_Git_main_menu_links(client):
     """This checks the navbar"""
     response = client.get("/git")
     assert response.status_code == 200
@@ -33,7 +33,7 @@ def test_request_img(client):
 """This test the Docker Page"""
 
 
-def test_request_main_menu_links(client):
+def test_request_Docker_main_menu_links(client):
     """This checks the navbar"""
     response = client.get("/docker")
     assert response.status_code == 200
@@ -67,13 +67,14 @@ def test_request_Table(client):
 """This test the Python/Flask Page"""
 
 
-def test_request_main_menu_links(client):
+def test_request_Python_Flask_main_menu_links(client):
     """This checks the navbar"""
     response = client.get("/python")
     assert response.status_code == 200
     assert b'<li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>' in response.data
     assert b'<li class="nav-item"><a class="nav-link" href="/git">Git</a></li>' in response.data
     assert b'<li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-link active" href="#">Python/Flask</a></li>' in response.data
     assert b'<li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>' in response.data
 
 def test_request_Simple_Pages_Text(client):
@@ -82,4 +83,35 @@ def test_request_Simple_Pages_Text(client):
     assert response.status_code == 200
     assert b'<h3>Simple Pages</h3>' in response.data
     assert b'<strong>index.html</strong>' in response.data
+    assert b'<strong>git.html</strong>' in response.data
+    assert b'<strong>docker.html</strong>' in response.data
+    assert b'<strong>python.html</strong>' in response.data
+    assert b'<strong>cicd.html</strong>' in response.data
+
+def test_request_Python_Img_Link(client):
+    """This checks if the image is correct and the link is valid"""
+    response = client.get("/python")
+    assert response.status_code == 200
+    assert b'<a href="https://github.com/rahpat0211/Rahul_Project1">' in response.data
+    assert b'<img src="https://www.python.org/static/community_logos/' \
+           b'python-logo-master-v3-TM-flattened.png" class="d-block w-100" alt="...">' in response.data
+
+
+"""This test the CI/CD Page"""
+
+
+def test_request_CICD_Heading(client):
+    """This checks the headings of each content"""
+    response = client.get("/cicd")
+    assert response.status_code == 200
+    assert b'<h3>How to review code using <strong>Development Server</strong></h3>' in response.data
+    assert b'<h3>How to deploy master to production server</h3>' in response.data
+    assert b'<h3>How to deploy image of your project to Docker Hub, when master is updated</h3>' in response.data
+
+def test_request_CICD_Colors(client):
+    """This checks the font color of 2 tags"""
+    response = client.get("/cicd")
+    assert response.status_code == 200
+    assert b'<font color="red">(Red is the original code)</font>' in response.data
+    assert b'<font color="green">(Green is your edited code)</font>' in response.data
 
