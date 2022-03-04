@@ -49,6 +49,7 @@ app/dyno.
 
 
 ### Future Notes and Resources
-* https://flask-user.readthedocs.io/en/latest/basic_app.html
-* https://hackersandslackers.com/flask-application-factory/
-* https://suryasankar.medium.com/a-basic-app-factory-pattern-for-production-ready-websites-using-flask-and-sqlalchemy-dbb891cdf69f
+* https://https://www.w3schools.com/html/
+* https://https://www.w3schools.com/css/default.asp
+* https://www.martinfowler.com/articles/continuousIntegration.html
+* https://www.martinfowler.com/bliki/ContinuousDelivery.html
