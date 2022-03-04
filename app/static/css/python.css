@@ -77,3 +77,19 @@ tr:nth-child(odd) {
 li{
     color: white;
 }
+
+.tests
+{
+    width: 70%;
+}
+
+.hr
+{
+    color: white;
+}
+
+h5
+{
+    color: wheat;
+    text-align: center;
+}
