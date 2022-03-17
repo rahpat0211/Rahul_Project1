@@ -93,3 +93,10 @@ a:hover
   background-color: white;
     color:black;
 }
+
+img
+{
+    width:  400px;
+    height: 400px;
+    object-fit: cover;
+}
