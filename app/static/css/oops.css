@@ -80,7 +80,7 @@ li{
 
 .tests
 {
-    width: 70%;
+    width: 50%;
 }
 
 .hr
@@ -126,4 +126,22 @@ a
 h6
 {
     color:white;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center
+{
+    text-align: center;
 }
