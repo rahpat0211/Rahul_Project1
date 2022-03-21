@@ -25,4 +25,4 @@ def test_calculator_operations_divide():
 
 def test_calculator_operations_divide_by_zero():
     """Testing the Division calculation if divided by 0"""
-    assert Division.divide(1, 0) == None
+    assert Division.divide(1, 0) is None
