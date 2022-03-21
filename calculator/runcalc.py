@@ -1,4 +1,5 @@
 from calculator.operations import Addition, Subtraction, Multiplication, Division
+from calculator.calculations import Addition as Add, Subtraction as Sub, Multiplication as Mul, Division as Div
 from calculator import Calculator
 
 print("Select an option to begin.")

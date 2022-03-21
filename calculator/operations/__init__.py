@@ -22,12 +22,13 @@ class Subtraction:
 
 
 class Multiplication:
-    """ This is the subtraction class"""
+    """ This is the multiplication class"""
 
     @staticmethod
     def multiply(value_1, value_2):
         """ This is the add method"""
         return value_1 * value_2
+
 
 class Division:
     """ This is the division class"""
@@ -38,4 +39,6 @@ class Division:
         if (value_2 == 0):
             print("You can't divide by 0")
         if (value_2 != 0):
-            return value_1 / value_2
+            return value_1/value_2
+
+       # return value_1 * value_2
