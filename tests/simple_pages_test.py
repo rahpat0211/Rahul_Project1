@@ -1,15 +1,29 @@
 """This test the Git Page"""
 
-
 def test_request_Git_main_menu_links(client):
     """This checks the navbar"""
     response = client.get("/git")
     assert response.status_code == 200
-    assert b'<li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>' in response.data
-    assert b'<li class="nav-item"><a class="nav-link active" href="/git">Git</a></li>' in response.data
-    assert b'<li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>' in response.data
-    assert b'<li class="nav-item"><a class="nav-link" href="/python">Python/Flask</a></li>' in response.data
+
+    assert b'<li class="nav-item"><a href="/" class="nav-' \
+    b'link" aria-current="page">Home</a></li>' in response.data
+
+    assert b'<li class="nav-item"><a class="nav-link ' \
+     b'active" href="/git">Git</a></li>' in response.data
+
+    assert b'<li class="nav-item"><a class="nav-' \
+    b'link" href="/docker">Docker</a></li>' in response.data
+
+    assert b'<li class="nav-item"><a class="nav-' \
+    b'link" href="/python">Python/Flask</a></li>' in response.data
     assert b'<li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-link" href="/solid">SOLID</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-' \
+    b'link" href="/glos">Glossary</a></li>' in response.data
+
+
 
 def test_request_h3(client):
     """This checks the page for the h3 values"""
@@ -26,22 +40,34 @@ def test_request_img(client):
     response = client.get("/git")
     assert response.status_code == 200
     assert b'<img src="https://www.cloudsavvyit.com/p/uploads/2019/10/e713ed70-1.png?' \
-           b'width=1198&trim=1,1&bg-color=000&pad=1,1" class="d-block w-100" alt="...">' in response.data
+           b'width=1198&trim=1,1&bg-color=000&pad=1,1" class="d-block '\
+            b'w-100" alt="...">' in response.data
 
 
-
-"""This test the Docker Page"""
-
+#This test the Docker Page
 
 def test_request_Docker_main_menu_links(client):
     """This checks the navbar"""
     response = client.get("/docker")
     assert response.status_code == 200
-    assert b'<li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>' in response.data
-    assert b'<li class="nav-item"><a class="nav-link" href="/git">Git</a></li>' in response.data
-    assert b'<li class="nav-item"><a class="nav-link active" href="/docker">Docker</a></li>' in response.data
-    assert b'<li class="nav-item"><a class="nav-link" href="/python">Python/Flask</a></li>' in response.data
+    assert b'<li class="nav-item"><a href="/" class="nav-' \
+    b'link" aria-current="page">Home</a></li>' in response.data
+
+    assert b'<li class="nav-item"><a class="nav-' \
+    b'link" href="/git">Git</a></li>' in response.data
+
+    assert b'<li class="nav-item"><a class="nav-' \
+    b'link active" href="/docker">Docker</a></li>' in response.data
+
+    assert b'<li class="nav-item"><a class="nav-' \
+    b'link" href="/python">Python/Flask</a></li>' in response.data
+
     assert b'<li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-link" href="/solid">SOLID</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-' \
+    b'link" href="/glos">Glossary</a></li>' in response.data
 
 def test_request_Steps(client):
     """This checks to see if the steps are correct"""
@@ -64,18 +90,29 @@ def test_request_Table(client):
     assert b'<th>Explanation</th>' in response.data
 
 
-"""This test the Python/Flask Page"""
+#This test the Python/Flask Page
 
 
 def test_request_Python_Flask_main_menu_links(client):
     """This checks the navbar"""
     response = client.get("/python")
     assert response.status_code == 200
-    assert b'<li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>' in response.data
+    assert b'<li class="nav-item"><a href="/" class="nav-' \
+    b'link" aria-current="page">Home</a></li>' in response.data
+
     assert b'<li class="nav-item"><a class="nav-link" href="/git">Git</a></li>' in response.data
-    assert b'<li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>' in response.data
-    assert b'<li class="nav-item"><a class="nav-link active" href="#">Python/Flask</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-' \
+    b'link" href="/docker">Docker</a></li>' in response.data
+
+    assert b'<li class="nav-item"><a class="nav-' \
+    b'link active" href="/python">Python/Flask</a></li>' in response.data
+
     assert b'<li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-link" href="/solid">SOLID</a></li>' in response.data
+    assert b'<li class="nav-item"><a class="nav-' \
+    b'link" href="/glos">Glossary</a></li>' in response.data
 
 def test_request_Simple_Pages_Text(client):
     """This checks the content of Simple Pages"""
@@ -94,10 +131,11 @@ def test_request_Python_Img_Link(client):
     assert response.status_code == 200
     assert b'<a href="https://github.com/rahpat0211/Rahul_Project1">' in response.data
     assert b'<img src="https://www.python.org/static/community_logos/' \
-           b'python-logo-master-v3-TM-flattened.png" class="d-block w-100" alt="...">' in response.data
+           b'python-logo-master-v3-TM-flattened.png" class="d-' \
+           b'block w-100" alt="...">' in response.data
 
 
-"""This test the CI/CD Page"""
+#This test the CI/CD Page
 
 
 def test_request_CICD_Heading(client):
@@ -106,7 +144,8 @@ def test_request_CICD_Heading(client):
     assert response.status_code == 200
     assert b'<h3>How to review code using <strong>Development Server</strong></h3>' in response.data
     assert b'<h3>How to deploy master to production server</h3>' in response.data
-    assert b'<h3>How to deploy image of your project to Docker Hub, when master is updated</h3>' in response.data
+    assert b'<h3>How to deploy image of your project ' \
+    b'to Docker Hub, when master is updated</h3>' in response.data
 
 def test_request_CICD_Colors(client):
     """This checks the font color of 2 tags"""
@@ -114,4 +153,3 @@ def test_request_CICD_Colors(client):
     assert response.status_code == 200
     assert b'<font color="red">(Red is the original code)</font>' in response.data
     assert b'<font color="green">(Green is your edited code)</font>' in response.data
-
