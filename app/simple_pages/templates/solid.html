@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,42 +19,143 @@
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
 
-        <span class="fs-4">Rahul</span>
-      </a>
+            <span class="fs-4">Rahul</span>
+        </a>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/git">Git</a></li>
-          <li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>
-          <li class="nav-item"><a class="nav-link" href="/python">Python/Flask</a></li>
-          <li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>
-          <li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>
-          <li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/solid">SOLID</a></li>
-          <li class="nav-item"><a class="nav-link" href="/glos">Glossary</a></li>
-      </ul>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/git">Git</a></li>
+            <li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>
+            <li class="nav-item"><a class="nav-link" href="/python">Python/Flask</a></li>
+            <li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>
+            <li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>
+            <li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/solid">SOLID</a></li>
+            <li class="nav-item"><a class="nav-link" href="/glos">Glossary</a></li>
+        </ul>
     </header>
     <div class="row">
 
         <div class="col-8">
 
+            <h3>Single-Responsibility Principle:</h3>
+            <a href="https://levelup.gitconnected.com/s-o-l-i-d-principles-explained-in-python-with-examples-83b2b43bdcde">Reference</a>
+            <br><br>
 
+            <div class="row">
+                <div class="column">
+                    <img src="/static/images/S.png" style="width:100%">
+                    <p class="center">A</p>
+                </div>
+
+            </div>
+            <br>
+
+
+
+            <p>
+                This class itself uses the <strong>Single-Responsibility Principle</strong>
+                since each class needs to be responsible
+                for one concept. Here in this example, <strong>Addition Class</strong>
+                has one function, <strong>add()</strong>. This function
+                has one concept meant to get the addition results. This class alongside with the other classes that
+                uses the <strong>Single-Responsibility Principle:</strong>
+            </p>
+
+            <ul>
+                <li>Addition()</li>
+                <li>Subtraction()</li>
+                <li>Multiplication()</li>
+                <li>Division()</li>
+            </ul>
+
+            <p>All have generally one concept hence if you change anything in these classes it will ultimately effect
+                only one behavior of the software. </p>
+            <hr><br>
+
+
+            <h3>Open-Closed Principle:</h3>
+            <a href="https://levelup.gitconnected.com/s-o-l-i-d-principles-explained-in-python-with-examples-83b2b43bdcde">Reference</a>
+            <br><br>
+
+            <div class="row">
+                <div class="column">
+                    <img src="/static/images/In1.png" style="width:100%">
+                    <p class="center">A</p>
+                </div>
+                <div class="column">
+                    <img src="/static/images/In2.png" style="width:100%">
+                    <p class="center">B</p>
+                </div>
+            </div><br>
+
+            <p>In image(A) you can see the class <strong>Addition</strong>
+                which is inherited from the class <strong>Calculation</strong>.</p>
+
+            <p>Open-Closed Principle states that objects or entities should be open for extension but closed for
+                modification. In image(B) we can see that for classes:</p>
+
+            <ul>
+                <li>Addition()</li>
+                <li>Subtraction()</li>
+                <li>Multiplication()</li>
+                <li>Division()</li>
+            </ul>
+
+            <p>Are all extensions of class <strong>Calculation</strong>. Instead of having all the functions that
+                each of these classes
+            have, we would add new logic to the corresponding classes seen above.</p>
+
+            <hr><br><h3>Liskov Substitution Principle:</h3>
+            <a href="https://levelup.gitconnected.com/s-o-l-i-d-principles-explained-in-python-with-examples-83b2b43bdcde">Reference</a>
+            <br><br>
+
+            <hr><br><h3>Interface Segregation Principle:</h3>
+            <a href="https://levelup.gitconnected.com/s-o-l-i-d-principles-explained-in-python-with-examples-83b2b43bdcde">Reference</a>
+            <br><br>
+            <div class="row">
+                <div class="column">
+                    <img src="/static/images/In1.png" style="width:100%">
+                    <p class="center">A</p>
+                </div>
+                <div class="column">
+                    <img src="/static/images/In2.png" style="width:100%">
+                    <p class="center">B</p>
+                </div>
+            </div><br>
+
+            <p><strong>Interface Segregation Principle</strong> defines that by segregating the role-based methods into smaller
+                role interfaces, the clients would depend only on the methods that are relevant to it.
+                As shown in the above images, this is the correct implementation of Interface Segregation Principle
+                since the abstract methods <strong>create()</strong> and <strong>convert_args_to_tuple_of_float()
+                </strong> are not large interfaces
+                instead they are smaller interfaces which the classes shown below would inherit:</p>
+
+            <ul>
+                <li>Addition()</li>
+                <li>Subtraction()</li>
+                <li>Multiplication()</li>
+                <li>Division()</li>
+            </ul>
+            <p>By segregating the role-based methods into smaller role interfaces, it will depend on the methods that are relevant to it. </p>
+
+
+
+            <hr><br><h3>Dependency Inversion Principle:</h3>
 
         </div>
 
         <div class="col">
 
 
-
             <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 380px;">
 
 
+                <img src="https://miro.medium.com/max/640/0*h-oNfEHFjEB2hOpZ.png" alt="..."></a><br>
 
-        <img src="https://miro.medium.com/max/640/0*h-oNfEHFjEB2hOpZ.png" alt="..."></a><br>
-
-  </div>
+            </div>
 
 
         </div>
@@ -77,25 +177,27 @@
 -->
 <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 <script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 </script>
 </body>
 </html>
