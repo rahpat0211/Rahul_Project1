@@ -100,3 +100,15 @@ img
     height: 400px;
     object-fit: cover;
 }
+
+h3
+{
+    text-align: center;
+    color:wheat;
+}
+
+.aboutme
+{
+    color:white;
+    text-align: center;
+}
