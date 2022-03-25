@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,44 +20,42 @@
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
 
-            <span class="fs-4">Rahul</span>
-        </a>
+        <span class="fs-4">Rahul</span>
+      </a>
 
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="/git">Git</a></li>
-            <li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>
-            <li class="nav-item"><a class="nav-link" href="/python">Python/Flask</a></li>
-            <li class="nav-item"><a class="nav-link active" href="/cicd">CI/CD</a></li>
-            <li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>
-            <li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>
-            <li class="nav-item"><a class="nav-link" href="/solid">SOLID</a></li>
-            <li class="nav-item"><a class="nav-link" href="/pylint">Pylint/Others</a></li>
-            <li class="nav-item"><a class="nav-link" href="/glos">Glossary</a></li>
-        </ul>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/git">Git</a></li>
+          <li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>
+          <li class="nav-item"><a class="nav-link" href="/python">Python/Flask</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/cicd">CI/CD</a></li>
+          <li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>
+          <li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>
+          <li class="nav-item"><a class="nav-link" href="/solid">SOLID</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pylint">Pylint/Others</a></li>
+          <li class="nav-item"><a class="nav-link" href="/glos">Glossary</a></li>
+      </ul>
     </header>
     <div class="row">
 
         <div class="col-8">
             <h3>How to review code using <strong>Development Server</strong></h3>
             <p>
-                To start off, once you have made the changes you want to commit and pushed your branch, navigate to
+               To start off, once you have made the changes you want to commit and pushed your branch, navigate to
                 <strong>Github</strong> and go to your repository. Next navigate to <strong>Pull Request</strong> and
                 click on <strong>New Pull Request</strong> which
                 should be located on the right side of the page. Here click on the dropdown menu of
                 <strong>compare:master</strong> and
                 select your <strong>branch</strong> where you made the commits on. Here you will be able to review
                 your code
-                <font color="red">(Red is the original code)</font><font color="green">(Green is your edited
-                code)</font>
+                <font color="red">(Red is the original code)</font><font color="green">(Green is your edited code)</font>
                 before making a <strong>merge pull request</strong>.
                 Next go
                 on your Heroku account and click on your development server app. This will show you what the web pages
                 look like when you pushed your branch on pycharm.
-            </p>
-            <hr>
+            </p><hr>
             <h3>How to deploy master to production server</h3>
             <p>
                 To start off, you will need to update the configuration file, <strong>prod.yml</strong>
@@ -74,15 +73,13 @@
                 your commit with what you want to say, after click <strong>Push</strong>.
                 This will allow you to deploy your <strong>master
                 branch</strong> to your <strong>production server</strong>.
-            </p>
-            <hr>
+            </p><hr>
             <h3>How to deploy image of your project to Docker Hub, when master is updated</h3>
             <p>
                 To start off, you will need to update the configuration file, <strong>prod.yml</strong>
                 which is located in workflows
                 directory. From there, you need to navigate to line 42 and enter your <strong>Dockerhub repository name
-                (EX <- rup1141/patel-r-project1:master)</strong>. Next you will need to navigate to your github account
-                and
+                (EX <- rup1141/patel-r-project1:master)</strong>. Next you will need to navigate to your github account and
                 create secrets keys for <strong>DOCKER_USERNAME</strong> & <strong>DOCKER_PASSWORD</strong>.
                 After finishing that, go back onto pycharm,
                 navigate to Git and click on <strong>Commit</strong>.
@@ -91,20 +88,25 @@
                 This will allow you to deploy an image of your project to <strong>Dockerhub</strong>
                 when your <strong>master</strong>
                 is updated.
-            </p>
-            <hr>
+            </p><hr>
+
+
+
+
 
 
         </div>
         <div class="col">
 
 
+
             <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 380px;">
 
 
-                <img src="https://miro.medium.com/max/640/0*h-oNfEHFjEB2hOpZ.png" alt="..."></a><br>
 
-            </div>
+        <img src="https://miro.medium.com/max/640/0*h-oNfEHFjEB2hOpZ.png" alt="..."></a><br>
+
+  </div>
 
 
         </div>
@@ -126,27 +128,25 @@
 -->
 <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 <script>
-    //Get the button
-    var mybutton = document.getElementById("myBtn");
+//Get the button
+var mybutton = document.getElementById("myBtn");
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-        scrollFunction()
-    };
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 </script>
 </body>
 </html>
