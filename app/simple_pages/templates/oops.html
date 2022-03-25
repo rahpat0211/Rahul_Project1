@@ -53,7 +53,8 @@
                     <p class="center">A</p>
                 </div>
 
-            </div><br>
+            </div>
+            <br>
 
             <p>As shown in the Image (A), our class <strong>Calculator</strong> has 4 separate methods:</p>
             <ul>
@@ -90,20 +91,26 @@
                     <img src="/static/images/In2.png" style="width:100%">
                     <p class="center">B</p>
                 </div>
-            </div><br>
+            </div>
+            <br>
 
-            <p>As shown in the images above, <strong>Addition(), Subtraction(), Multiplication(), and Division()</strong>
+            <p>As shown in the images above, <strong>Addition(), Subtraction(), Multiplication(), and
+                Division()</strong>
                 are all subclasses of <strong>Calculation()</strong>.
             </p>
 
-            <p>These subclasses inherits <strong><font color="cyan"> 2 abstract methods</font>, create and convert_args_to_tuple_of_float</strong> and
-                <strong><font color="cyan"> 1 method</font>, __init__</strong>. Inheriting these methods means that we can use them as if they were defined
+            <p>These subclasses inherits <strong><font color="cyan"> 2 abstract methods</font>, create and
+                convert_args_to_tuple_of_float</strong> and
+                <strong><font color="cyan"> 1 method</font>, __init__</strong>. Inheriting these methods means that we
+                can use them as if they were defined
                 in the <strong>Addition(), Subtraction(), Multiplication(), and Division()</strong> classes.
             </p>
 
             <p>
-                When you create an instance for <strong>Addition(), Subtraction(), Multiplication(), or Division()</strong>,
-                the <strong>__init__ </strong>function will also convert the tuple of random data types to the data type float,
+                When you create an instance for <strong>Addition(), Subtraction(), Multiplication(), or
+                Division()</strong>,
+                the <strong>__init__ </strong>function will also convert the tuple of random data types to the data type
+                float,
                 in which it can be used as a list and be able to edit the calculation.
             </p>
 
@@ -111,22 +118,25 @@
             <hr>
             <h3>Polymorphism:</h3>
             <a href="https://www.askpython.com/python/oops/polymorphism-in-python">Reference</a><br><br>
-            <p>This refers to the ability of the function with the same name to carry different functionality altogether.
+            <p>This refers to the ability of the function with the same name to carry different functionality
+                altogether.
             </p>
             <div class="row">
                 <div class="column">
                     <img src="/static/images/In2.png" style="width:100%">
                     <p class="center">A</p>
                 </div>
-            </div><br>
-            <p>As shown in Image(A), the python interpreter automatically recognizes that the <strong>get_result()</strong>
+            </div>
+            <br>
+            <p>As shown in Image(A), the python interpreter automatically recognizes that the
+                <strong>get_result()</strong>
                 method for <strong>Addition(), Subtraction(), Multiplication(), and Division() </strong> classes is
                 overridden. So it uses the ones defined in each of these classes. </p>
             <hr>
             <h3>Abstraction:</h3>
             <a href="https://www.askpython.com/python/oops/abstraction-in-python">Reference</a><br><br>
             <p>This refers to hiding the internal implementation of a process or method from the user. This is how
-            the user knows what he/she is doing but not how the work is being done.</p>
+                the user knows what he/she is doing but not how the work is being done.</p>
 
             <div class="row">
                 <div class="column">
@@ -134,18 +144,22 @@
                     <p class="center">A</p>
                 </div>
 
-            </div><br>
+            </div>
+            <br>
 
             <p>In order to declare an <strong>Abstract class</strong>, you will first need to import the <strong>
                 calculator.operations
             </strong> module as shown in above image on line 2.</p>
-            <p>The class <strong>Calculator</strong> shown in the Image(A) above, is the abstract class that inherits from the
+            <p>The class <strong>Calculator</strong> shown in the Image(A) above, is the abstract class that inherits
+                from the
                 <strong>Addition(), Subtraction(), Multiplication(), and Division()</strong> classes from the
                 <strong>calculator.operations</strong> module. It contains an abstract method
-                <strong>create()</strong> and <strong>convert_args_to_tuple_of_float() </strong>which are visible by the user. </p>
+                <strong>create()</strong> and <strong>convert_args_to_tuple_of_float() </strong>which are visible by the
+                user. </p>
 
             <p>After the user creates objects and invokes the abstract methods, the hidden definitions for the abstract
-                methods will run. These definitions are <strong>hidden</strong> from the user and will only be invoked on the Classes:</p>
+                methods will run. These definitions are <strong>hidden</strong> from the user and will only be invoked
+                on the Classes:</p>
 
             <ul>
                 <li>Addition()</li>
@@ -153,7 +167,8 @@
                 <li>Multiplication()</li>
                 <li>Division()</li>
             </ul>
-            <p>This is because these classes are an extension of the abstract method and are not classified as an abstract method.</p>
+            <p>This is because these classes are an extension of the abstract method and are not classified as an
+                abstract method.</p>
         </div>
 
         <div class="col">
