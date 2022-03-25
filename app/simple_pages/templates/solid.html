@@ -55,7 +55,6 @@
             <br>
 
 
-
             <p>
                 This class itself uses the <strong>Single-Responsibility Principle</strong>
                 since each class needs to be responsible
@@ -74,7 +73,8 @@
 
             <p>All have generally one concept hence if you change anything in these classes it will ultimately effect
                 only one behavior of the software. </p>
-            <hr><br>
+            <hr>
+            <br>
 
 
             <h3>Open-Closed Principle:</h3>
@@ -90,7 +90,8 @@
                     <img src="/static/images/In2.png" style="width:100%">
                     <p class="center">B</p>
                 </div>
-            </div><br>
+            </div>
+            <br>
 
             <p>In image(A) you can see the class <strong>Addition</strong>
                 which is inherited from the class <strong>Calculation</strong>.</p>
@@ -107,9 +108,11 @@
 
             <p>Are all extensions of class <strong>Calculation</strong>. Instead of having all the functions that
                 each of these classes
-            have, we would add new logic to the corresponding classes seen above.</p>
+                have, we would add new logic to the corresponding classes seen above.</p>
 
-            <hr><br><h3>Liskov Substitution Principle:</h3>
+            <hr>
+            <br>
+            <h3>Liskov Substitution Principle:</h3>
             <a href="https://levelup.gitconnected.com/s-o-l-i-d-principles-explained-in-python-with-examples-83b2b43bdcde">Reference</a>
             <br><br>
 
@@ -122,7 +125,8 @@
                     <img src="/static/images/S.png" style="width:100%">
                     <p class="center">B</p>
                 </div>
-            </div><br>
+            </div>
+            <br>
 
             <p>Since we can’t replace the parent class’s functionality, we can re -write it in the child class
                 for modification. In Image(A) above this represents the <strong>child class</strong>,
@@ -133,7 +137,9 @@
                 into the <strong>Child class</strong>
                 and then write the desired modifications within the <strong>child class</strong>.</p>
 
-            <hr><br><h3>Interface Segregation Principle:</h3>
+            <hr>
+            <br>
+            <h3>Interface Segregation Principle:</h3>
             <a href="https://levelup.gitconnected.com/s-o-l-i-d-principles-explained-in-python-with-examples-83b2b43bdcde">Reference</a>
             <br><br>
             <div class="row">
@@ -145,9 +151,11 @@
                     <img src="/static/images/In2.png" style="width:100%">
                     <p class="center">B</p>
                 </div>
-            </div><br>
+            </div>
+            <br>
 
-            <p><strong>Interface Segregation Principle</strong> defines that by segregating the role-based methods into smaller
+            <p><strong>Interface Segregation Principle</strong> defines that by segregating the role-based methods into
+                smaller
                 role interfaces, the clients would depend only on the methods that are relevant to it.
                 As shown in the above images, this is the correct implementation of Interface Segregation Principle
                 since the abstract methods <strong>create()</strong> and <strong>convert_args_to_tuple_of_float()
@@ -160,11 +168,13 @@
                 <li>Multiplication()</li>
                 <li>Division()</li>
             </ul>
-            <p>By segregating the role-based methods into smaller role interfaces, it will depend on the methods that are relevant to it. </p>
+            <p>By segregating the role-based methods into smaller role interfaces, it will depend on the methods that
+                are relevant to it. </p>
 
 
-
-            <hr><br><h3>Dependency Inversion Principle:</h3>
+            <hr>
+            <br>
+            <h3>Dependency Inversion Principle:</h3>
             <a href="https://levelup.gitconnected.com/s-o-l-i-d-principles-explained-in-python-with-examples-83b2b43bdcde">Reference</a>
             <br><br>
             <div class="row">
@@ -176,7 +186,8 @@
                     <img src="/static/images/In2.png" style="width:100%">
                     <p class="center">B</p>
                 </div>
-            </div><br>
+            </div>
+            <br>
             <p>As shown in the image above, the classes shown below depend on the
                 abstractions and not concretions. Since <strong>Dependency Inversion Principle</strong>
                 defines that <strong>High-level/Low-level modules</strong> and there details depend on
@@ -202,26 +213,27 @@
                 <h3>Factory Design Pattern:</h3>
                 <a href="https://refactoring.guru/design-patterns/factory-method/python/example">Reference</a>
                 <br><br>
-            <div class="row">
-                <div class="column">
-                    <img src="/static/images/In1.png" style="width:100%">
-                    <p class="center">A</p>
-                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="/static/images/In1.png" style="width:100%">
+                        <p class="center">A</p>
+                    </div>
 
-            </div><br>
+                </div>
+                <br>
                 <p>This is a creational design pattern which solves the problem of creating product objects without
                     specifying their concrete classes.</p>
                 <hr>
                 <p>Class <strong>Calculation()</strong> declares the factory method that is supposed to return an object
-                of the product class. The subclasses of <strong>Calculation()</strong> provide the implementation of
-                this method.</p>
+                    of the product class. The subclasses of <strong>Calculation()</strong> provide the implementation of
+                    this method.</p>
                 <hr>
                 <p>Class <strong>create()</strong> provides the default implementation of the factory method.</p>
 
                 <hr>
                 <p>Class <strong>Calculation()</strong> primary responsibility is to contain some logic that relies on
-                the products object returned by the factory method. Subclasses of this can change the logic by
-                overriding the factory method and reutrning different type of product.</p>
+                    the products object returned by the factory method. Subclasses of this can change the logic by
+                    overriding the factory method and reutrning different type of product.</p>
             </div>
 
 

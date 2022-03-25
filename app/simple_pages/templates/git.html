@@ -19,23 +19,23 @@
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
 
-        <span class="fs-4">Rahul</span>
-      </a>
+            <span class="fs-4">Rahul</span>
+        </a>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/git">Git</a></li>
-          <li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>
-          <li class="nav-item"><a class="nav-link" href="/python">Python/Flask</a></li>
-          <li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>
-          <li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>
-          <li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>
-          <li class="nav-item"><a class="nav-link" href="/solid">SOLID</a></li>
-          <li class="nav-item"><a class="nav-link" href="/pylint">Pylint/Others</a></li>
-          <li class="nav-item"><a class="nav-link" href="/glos">Glossary</a></li>
-      </ul>
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/git">Git</a></li>
+            <li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>
+            <li class="nav-item"><a class="nav-link" href="/python">Python/Flask</a></li>
+            <li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>
+            <li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>
+            <li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>
+            <li class="nav-item"><a class="nav-link" href="/solid">SOLID</a></li>
+            <li class="nav-item"><a class="nav-link" href="/pylint">Pylint/Others</a></li>
+            <li class="nav-item"><a class="nav-link" href="/glos">Glossary</a></li>
+        </ul>
     </header>
     <div class="row">
 
@@ -44,42 +44,44 @@
             <p>
                 It is a branch that Github displays when anyone visits the repository. A <strong>Default Branch</strong>
                 is used for pull requests and code commits.
-            </p><hr>
+            </p>
+            <hr>
             <h3>Merge</h3>
             <p>
                 It is used to combine two branches after finding a common base commit.
-            </p><hr>
+            </p>
+            <hr>
             <h3>Commit</h3>
             <p>
-                Snapshots of your repository at specific times. Which results in a story of your history of the repository.
-            </p><hr>
+                Snapshots of your repository at specific times. Which results in a story of your history of the
+                repository.
+            </p>
+            <hr>
             <h3>Tag</h3>
             <p>
                 Used to mark a point in the repository history, usually a <strong>version number</strong> for a release.
-            </p><hr>
+            </p>
+            <hr>
             <h3>Repository</h3>
             <p>
                 It is a collection of files of different versions of a project.
-            </p><hr>
+            </p>
+            <hr>
         </div>
         <div class="col">
 
 
-
             <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 380px;">
 
-    <div class="list-group list-group-flush border-bottom scrollarea">
+                <div class="list-group list-group-flush border-bottom scrollarea">
 
 
-      <img src="https://www.cloudsavvyit.com/p/uploads/2019/10/e713ed70-1.png?width=1198&trim=1,1&bg-color=000&pad=1,1" class="d-block w-100" alt="...">
+                    <img src="https://www.cloudsavvyit.com/p/uploads/2019/10/e713ed70-1.png?width=1198&trim=1,1&bg-color=000&pad=1,1"
+                         class="d-block w-100" alt="...">
 
 
-
-
-
-
-    </div>
-  </div>
+                </div>
+            </div>
 
 
         </div>
@@ -101,25 +103,27 @@
 -->
 <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 <script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 </script>
 </body>
 </html>
