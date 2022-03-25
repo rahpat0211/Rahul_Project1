@@ -11,7 +11,7 @@
     {% block head %}
         <link rel="stylesheet" href="{{ url_for('static', filename='css/solid.css') }}"/>
 
-        <title>CI/CD</title>
+        <title>SOLID</title>
     {% endblock %}
 
 </head>
@@ -33,6 +33,7 @@
             <li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>
             <li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>
             <li class="nav-item"><a class="nav-link active" href="/solid">SOLID</a></li>
+            <li class="nav-item"><a class="nav-link" href="/pylint">Pylint/Others</a></li>
             <li class="nav-item"><a class="nav-link" href="/glos">Glossary</a></li>
         </ul>
     </header>
@@ -112,6 +113,26 @@
             <a href="https://levelup.gitconnected.com/s-o-l-i-d-principles-explained-in-python-with-examples-83b2b43bdcde">Reference</a>
             <br><br>
 
+            <div class="row">
+                <div class="column">
+                    <img src="/static/images/a1.png" style="width:100%">
+                    <p class="center">A</p>
+                </div>
+                <div class="column">
+                    <img src="/static/images/S.png" style="width:100%">
+                    <p class="center">B</p>
+                </div>
+            </div><br>
+
+            <p>Since we can’t replace the parent class’s functionality, we can re -write it in the child class
+                for modification. In Image(A) above this represents the <strong>child class</strong>,
+                Image(B) represents the <strong>parent class</strong>.</p>
+
+            <p>In order to abide by the rules of <strong>Liskov Subsitution Principle</strong>, we duplicate the
+                <strong>Parent class</strong>
+                into the <strong>Child class</strong>
+                and then write the desired modifications within the <strong>child class</strong>.</p>
+
             <hr><br><h3>Interface Segregation Principle:</h3>
             <a href="https://levelup.gitconnected.com/s-o-l-i-d-principles-explained-in-python-with-examples-83b2b43bdcde">Reference</a>
             <br><br>
@@ -144,6 +165,31 @@
 
 
             <hr><br><h3>Dependency Inversion Principle:</h3>
+            <a href="https://levelup.gitconnected.com/s-o-l-i-d-principles-explained-in-python-with-examples-83b2b43bdcde">Reference</a>
+            <br><br>
+            <div class="row">
+                <div class="column">
+                    <img src="/static/images/In1.png" style="width:100%">
+                    <p class="center">A</p>
+                </div>
+                <div class="column">
+                    <img src="/static/images/In2.png" style="width:100%">
+                    <p class="center">B</p>
+                </div>
+            </div><br>
+            <p>As shown in the image above, the classes shown below depend on the
+                abstractions and not concretions. Since <strong>Dependency Inversion Principle</strong>
+                defines that <strong>High-level/Low-level modules</strong> and there details depend on
+                the abstractions, we can validate that with the two abstractions classes,
+                <strong>create()</strong> and <strong>convert_args_to_tuple_of_float()</strong>. These classes
+                serve as the
+                parent class in which the classes below depend on. </p>
+            <ul>
+                <li>Addition()</li>
+                <li>Subtraction()</li>
+                <li>Multiplication()</li>
+                <li>Division()</li>
+            </ul>
 
         </div>
 
@@ -154,7 +200,28 @@
 
 
                 <h3>Factory Design Pattern:</h3>
+                <a href="https://refactoring.guru/design-patterns/factory-method/python/example">Reference</a>
+                <br><br>
+            <div class="row">
+                <div class="column">
+                    <img src="/static/images/In1.png" style="width:100%">
+                    <p class="center">A</p>
+                </div>
 
+            </div><br>
+                <p>This is a creational design pattern which solves the problem of creating product objects without
+                    specifying their concrete classes.</p>
+                <hr>
+                <p>Class <strong>Calculation()</strong> declares the factory method that is supposed to return an object
+                of the product class. The subclasses of <strong>Calculation()</strong> provide the implementation of
+                this method.</p>
+                <hr>
+                <p>Class <strong>create()</strong> provides the default implementation of the factory method.</p>
+
+                <hr>
+                <p>Class <strong>Calculation()</strong> primary responsibility is to contain some logic that relies on
+                the products object returned by the factory method. Subclasses of this can change the logic by
+                overriding the factory method and reutrning different type of product.</p>
             </div>
 
 
